@@ -140,7 +140,9 @@ const dateRegExp = /([^T]+)/
         `
     document.getElementById('graph2').insertAdjacentHTML('beforeend', graph2)
 
-    document.getElementById('hub').style.display = "flex"
+    document.getElementById('hub1').style.display = "flex"
+    document.getElementById('hub2').style.display = "flex"
+    document.getElementById('hub3').style.display = "flex"
 })
 }
 
@@ -168,7 +170,9 @@ function logOut(){
     document.getElementById("login-container").style.display = "flex"
     document.getElementById("logout-container").style.display = "none"
     document.getElementById("graph-continer").style.display = "none"
-    document.getElementById("hub").style.display = "none"
+    document.getElementById('hub1').style.display = "none"
+    document.getElementById('hub2').style.display = "none"
+    document.getElementById('hub3').style.display = "none"
     document.getElementById("username&Email").value = ""
     document.getElementById("login-password").value = ""
     isLoggedin = false
