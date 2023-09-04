@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GraphQL</title>
+  
+</head>
+
+<body>
+  <div id="login-container" class="login-container">
+    <div class="login-title">Login</div>
+    <div class="login-content-container">
+      <div class="login-input-container">
+        <label for="username&Email" class="login-input-label">
+          Username or email
+        </label>
+        <input id="username&Email" name="username&Email" type="username&Email" autocomplete="username&Email"
+          required class="login-input" />
+      </div>
+      <div class="login-input-container">
+        <label for="password" class="login-input-label"> Password </label>
+        <input id="login-password" name="password" type="password" autocomplete="current-password" required
+          class="login-input" />
+      </div>
+      <button id="login-button" name="login" class="login-card-button">Login</button>
+    </div>
+  </div>
+
+  <!-- Logout button -->
+  <div id="logout-container" class="logout-container">
+    <button id="logout-button" class="logout-button">Logout</button>
+  </div>
+
+  <!-- HUB -->
+  <div id="hub" class="hub">
+    <div class="hub-title">Profile</div>
+      <div class="hub-content-container">
+              <p id="hub-userID"></p>
+              <p id="hub-name"></p>
+              <p id="hub-XP"></p>
+              <p id="hub-audit-ratio"></p>
+      </div>
+  </div>
+
+  <!-- Graphs -->
+  <div id="graph-continer" class="graph-container">
+    <div>XP progression</div>
+    <svg id="graph1" class="svg" viewbox="0 0 510 210">
+    </svg>
+    <div>Audit ratio</div>
+    <svg id="graph2" class="svg" viewbox="0 0 510 210">
+    </svg>
+  </div>
+</body>
+
+<script src="main.js" defer></script>
+
+</html>
